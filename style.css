@@ -1,0 +1,92 @@
+body {
+    text-align: center;
+    
+}
+
+
+header h1 {
+    display: inline;
+}
+
+nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    list-style: none;
+    height: 200px;
+}
+
+figure {
+    display: table;
+    
+}
+
+figcaption {
+    display:table-caption;
+    caption-side: top;
+    font-size: 1.5em;
+    font-family: "Courier New", Courier, monospace;
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Classes */
+
+
+.logo {
+    display: inline-block;
+    text-align: center;
+    padding-top: 30px;
+    width: 350px;
+}
+
+
+.gallery {
+    display: flex;
+    padding-top: 40px;
+    align-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.gallery-img {
+    margin: 1em 1em;
+}
+
+
+
+
+
+
+
+
+
+/* Media queries */
+
+/*
+
+@media (max-width: 500px){
+    .logo {
+        width: 300px;
+        
+    }
+    
+}
+
+@media (min-width: 1200px){
+    .logo {
+        width: 550px;
+        
+    }
+    
+}

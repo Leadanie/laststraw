@@ -1,3 +1,6 @@
+
+/* Resizes images when hovering */
+
 $(document).ready(function() {
     bindEnlargeAction();    
 });

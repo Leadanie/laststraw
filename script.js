@@ -1,8 +1,14 @@
-$('img').hover(increaseSize, returnToOriginalSize);
+$(document).ready(function() {
+    bindEnlargeAction();    
+});
 
-function increaseSize() {
-    $(this).css({height: '+=10%', width: '+=10%'});
-}
-function returnToOriginalSize() {
-    $(this).css({height: "", width: ""});
+function bindEnlargeAction() {
+
+    $('.enlarge').load(function() {
+        $(this).data('height', this.height);
+    }).bind('mouseenter mouseleave', function(e){
+        $(this).stop().animate({
+           height: $(this).data('height') * (e.type === 'mouseenter' ? 1.5 : 1) 
+        });
+    });
 }
